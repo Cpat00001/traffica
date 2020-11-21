@@ -1,0 +1,15 @@
+/*
+Theme Name: traffica
+Author: Pat
+
+*/
+body {
+  background-color: pink;
+}
+/* Header */
+.header {
+  background: greenyellow;
+  min-height: 100px;
+  height: auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
