@@ -12,7 +12,7 @@
 
 <!-- Nav -->
 <header class="header">
-    <div class="container  align-items-center justify-content-between">
+    <div class="container align-items-center justify-content-between">
         <div class="row">
                 <div class="col-sm-2 col-lg-1 ">
                     <img src="<?php bloginfo('template_directory');?>./images/logo.jpg" class="img-fluid max-width: 100%;" id="logo""> 
@@ -21,8 +21,7 @@
                 <div class="col-sm-7 col-lg-8">
                     <?php 
                         wp_nav_menu(array(
-                            'theme_location' => 'top_menu',
-
+                            'theme_location' => 'top_menu'
                         ));
                     ?>
                 </div>
@@ -30,6 +29,3 @@
     </div>
 </header>
 
-
-    
-<h1>Traffica</h1>
