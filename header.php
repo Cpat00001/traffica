@@ -12,10 +12,12 @@
 
 <!-- Nav -->
 <header class="header">
-    <div class="container align-items-center justify-content-between">
+    <div class="container">
         <div class="row">
-                <div class="col-sm-2 col-lg-1 ">
-                    <img src="<?php bloginfo('template_directory');?>./images/logo.jpg" class="img-fluid max-width: 100%;" id="logo""> 
+                <div class="col-sm-2 col-lg-1 d-flex align-items-center justify-content-between">
+                    <a href="<?php bloginfo('url') ?>">
+                        <img src="<?php bloginfo('template_directory');?>./images/logo.jpg" id="logo""> 
+                    </a>
                 </div>
                 <div class="col-sm-3 col-lg-3"><h5>Traffica</h5></div>
                 <div class="col-sm-7 col-lg-8">

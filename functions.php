@@ -16,9 +16,13 @@ add_action('wp_enqueue_scripts','add_javascript');
 
 // add menu
 add_theme_support('menus');
+add_theme_support('post-thumbnails');
 
 register_nav_menus(array(
     'top-menu' => 'Top Menu'
 ));
+
+// Add images sizes
+add_image_size('custom-size',1100,750,true);
 
 ?>
