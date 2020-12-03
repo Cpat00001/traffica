@@ -18,13 +18,72 @@
                     'theme_location' => 'top-menu'
                 ))?>
             </div>
-            <div class="col-12" id="first_row"><h5>Top</h5></div>
+            <div class="col-12" id="first_row"><h5><?php the_title();?></h5></div>
             <div class="col-12" id="second_row"><h5>About Us</h5></div>
-            <div class="col-12" id="third_row"><h5>More Details</h5></div>
+            
+            <div class="col-12" id="third_row">
+                <h5>Projects</h5>
+                        <!-- carousel -->
+                        <!--OPEN CAROUSEL LOOP-->
+                        <?php $loop = new WP_Query(array(
+                                'post_type' => 'post', 
+                                'posts_per_page' => 6,
+                                'orderyby' => 'post_id',
+                                'order' => 'ASC' )); 
+                                ?>
+
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                            <?php $count = 0; while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                                <li data-target="#news-carousel" data-slide-to="<?php echo $count ?>" class="<?php if($count == '0'){ echo 'active'; } ?>"></li>
+                            <?php $count++; endwhile; wp_reset_postdata(); ?>  
+                            </ul>
+
+                        <?php $count = 0; while ( $loop->have_posts() ) : $loop->the_post(); ?>      
+                            
+                        <!-- The slideshow -->
+                                <div class="carousel-item <?php if($count == '0'){ echo 'active'; } ?>">
+                                    <div >
+                                        <?php the_post_thumbnail( 'full' ); ?>
+                                        <h1><?php the_title(); ?></h1>
+                                        <p><?php the_excerpt(); ?></p>      
+                                    </div>
+                            </div><!-- /item -->
+
+                        
+                            <?php $count++; endwhile; wp_reset_postdata(); ?>  
+
+                        </div> <!-- Carousel 1 -->
+                        <!-- end of carousel -->
+            </div>
+                  
             <div class="col-12" id="fourth_row">
                 <div class="row">
                     <div class="col col-sm-3" id="fourth_row_label">
                         <h5>Contact Us</h5>
+                    </div>
+                    <div class="col col-sm-12">
+    <!-- form to submit data -->                   
+            <form method="post" action="check_form.php">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="inputEmail4">Name</label>
+                <input type="text" maxlength="15" class="form-control" name="name" id="inputName" placeholder="Name">
+                </div>
+                <div class="form-group col-md-6">
+                <label for="inputPassword4">Email</label>
+                <input type="email" maxlength="30" class="form-control" name="email" id="inputEmail" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Contact Number</label>
+                <input type="text" class="form-control" name="number" id="inputNumber" placeholder="12345678">
+            </div>
+            <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+            </form>
+
                     </div>
                 </div>
             </div>

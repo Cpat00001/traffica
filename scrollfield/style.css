@@ -4,7 +4,7 @@ Author: Pat
 */
 
 body {
-  background-color: white;
+  background-color: rgb(73, 67, 67);
 }
 .frame {
   max-width: 1100px;
@@ -98,7 +98,7 @@ html {
   color: white;
   text-align: center;
   font-weight: 900;
-  background: rgba(240, 13, 13, 0.8);
+  background: rgba(240, 84, 84, 0.7);
   z-index: 1;
   transition: all 1s;
 }
