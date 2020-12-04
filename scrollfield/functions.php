@@ -13,6 +13,11 @@ function add_javascript()
 {
     wp_register_script('custom_javascript', get_template_directory_uri() . '/scripts.js', array('jquery'), true);
     wp_enqueue_script('custom_javascript');
+
+    // form.js 
+    wp_register_script('js_form', get_template_directory_uri() . '/form.js', array('jquery'), true);
+    wp_enqueue_script('js_form');
+
 }
 add_action('wp_enqueue_scripts', 'add_javascript');
 
@@ -55,5 +60,8 @@ add_action('init', 'create_posttype');
 
 // add post thumbnail
 add_theme_support( 'post-thumbnails' );
+
+// add javascript form validation
+
 
 ?>

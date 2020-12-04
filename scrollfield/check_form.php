@@ -1,15 +1,13 @@
-
-<!-- form validation -->
-
 <?php
 
 //define variables
 $name = $email = $number = '';
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    $name = checkData($_POST("name"));
-    $email = checkData($POST("email"));
-    $number = checkData($POST("number"));
+    $name = checkData($_POST("Na"));
+    var_dump($name);
+    $email = checkData($POST("Em"));
+    $number = checkData($POST("Nu"));
 }
 
 function checkData($data){
@@ -26,4 +24,4 @@ echo $email;
 echo "<br>";
 echo $number;
 
-?>
+?>    

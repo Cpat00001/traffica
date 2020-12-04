@@ -1,4 +1,4 @@
-// go to top div
+// add go "to top" div when page scrolled down
 const myScrollFunc = function () {
 
     myID = document.getElementById("myID");
@@ -19,4 +19,4 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
   }
 
-// alert('test');
+// alert('hello from scripts.js')

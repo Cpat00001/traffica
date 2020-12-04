@@ -66,20 +66,23 @@
                     </div>
                     <div class="col col-sm-12">
     <!-- form to submit data -->                   
-            <form method="post" action="check_form.php">
+            <form method="POST" action="#" id="form" onsubmit="checkMe()">
+                <p>Please fill in this form and we will contact you.</p>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                <label for="inputEmail4">Name</label>
-                <input type="text" maxlength="15" class="form-control" name="name" id="inputName" placeholder="Name">
+                <label for="Na">Name</label>
+                <input type="text" maxlength="15" class="form-control" name="Na" id="Na" placeholder="Name" >
                 </div>
                 <div class="form-group col-md-6">
-                <label for="inputPassword4">Email</label>
-                <input type="email" maxlength="30" class="form-control" name="email" id="inputEmail" placeholder="Email">
+                <label for="Em">Email</label>
+                <input type="email" maxlength="30" class="form-control" name="Em" id="Em" placeholder="Email">
                 </div>
             </div>
+            <!-- display error message -->
+            <div id="error" style="color:red"></div>
             <div class="form-group">
-                <label for="inputAddress">Contact Number</label>
-                <input type="text" class="form-control" name="number" id="inputNumber" placeholder="12345678">
+                <label for="Nu">Contact Number</label>
+                <input type="text" class="form-control" name="Nu" id="Nu" placeholder="contact number">
             </div>
             <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
             </form>
