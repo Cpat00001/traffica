@@ -61,7 +61,31 @@ add_action('init', 'create_posttype');
 // add post thumbnail
 add_theme_support( 'post-thumbnails' );
 
-// add javascript form validation
+// add php form validation
+if(isset($_POST["sub"])){
+    $name = "";
+    $name = checkData($_POST["Na"]);
+    $email = checkData($_POST["Em"]);
+    $number = checkData($_POST["Nu"]);
+
+    echo "Form submitted:";
+    echo "</br>";
+    echo "Your name: $name";
+    echo "</br>";
+    echo "Your email: $email ";
+    echo "</br>";
+    echo "Your number: $number";
+    echo "</br>";
+    echo "Go back to home page";
+    echo "</br>";
+    echo "<a href='http://localhost/scrollfield/'><h1>Go back</h1></a>";
+}
+function checkData($data){
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
 
 
 ?>

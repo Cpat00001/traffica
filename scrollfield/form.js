@@ -5,7 +5,7 @@ function checkMe(event){
     const nu = document.forms["form"]["Nu"].value;
     const errorElem = document.getElementById('error');
     const form = document.forms["form"];
-    
+  
     let messages = [];
     if(na === '' || na === null){
         messages.push('Name is required');
@@ -18,14 +18,12 @@ function checkMe(event){
     }
     if(messages.length > 0){
         const err = errorElem.innerText = messages.join(' , ')
-        alert("messages:" + messages.length);
+        // alert("messages:" + messages.length); 
+        errorElem.innerHtml = err; 
         event.preventDefault();  
-        errorElem.innerHtml = err;
-        
     }
-   
-    
 }
+
 
 
 

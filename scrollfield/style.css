@@ -110,3 +110,8 @@ html {
   opacity: 1;
   left: 200;
 }
+/* form */
+#error {
+  color: rgb(194, 49, 49);
+  font-weight: 900;
+}
