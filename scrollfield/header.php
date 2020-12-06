@@ -60,30 +60,31 @@
             </div>
                   
             <div class="col-12" id="fourth_row">
-                <div class="row">
+                <div class="row" id="formDiv">
                     <div class="col col-sm-3" id="fourth_row_label">
                         <h5>Contact Us</h5>
                     </div>
                     <div class="col col-sm-12">
-                        <form method="POST" action="form.php" id="form" onsubmit="checkMe(event)">
+                            <!-- form -->
+                        <form method="POST" action="http://localhost/scrollfield/wp-content/plugins/process/processPage.php" id="form" onsubmit="checkMe(event)">
                             <p>Please fill in this form and we will contact you.</p>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                            <label for="Na">Name</label>
-                            <input type="text" maxlength="15" class="form-control" name="Na" id="Na" placeholder="Name" >
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                <label for="Na">Name</label>
+                                <input type="text" maxlength="15" class="form-control" name="Na" id="Na" placeholder="Name" >
+                                </div>
+                                <div class="form-group col-md-6">
+                                <label for="Em">Email</label>
+                                <input type="email" maxlength="30" class="form-control" name="Em" id="Em" placeholder="Email">
+                                </div>
                             </div>
-                            <div class="form-group col-md-6">
-                            <label for="Em">Email</label>
-                            <input type="email" maxlength="30" class="form-control" name="Em" id="Em" placeholder="Email">
+                            <!-- display error message -->
+                            <div id="error" style="color:red"></div>
+                            <div class="form-group">
+                                <label for="Nu">Contact Number</label>
+                                <input type="text" class="form-control" name="Nu" id="Nu" placeholder="contact number">
                             </div>
-                        </div>
-                        <!-- display error message -->
-                        <div id="error" style="color:red"></div>
-                        <div class="form-group">
-                            <label for="Nu">Contact Number</label>
-                            <input type="text" class="form-control" name="Nu" id="Nu" placeholder="contact number">
-                        </div>
-                        <button name="sub" type="submit" value="Submit" class="btn btn-primary">Submit</button>
+                            <button name="sub" type="submit" value="Submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                 </div>

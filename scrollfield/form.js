@@ -16,6 +16,7 @@ function checkMe(event){
     if(nu === "" || nu === null){
         messages.push('Number is required');
     }
+
     if(messages.length > 0){
         const err = errorElem.innerText = messages.join(' , ')
         // alert("messages:" + messages.length); 
@@ -23,6 +24,9 @@ function checkMe(event){
         event.preventDefault();  
     }
 }
+
+
+
 
 
 
