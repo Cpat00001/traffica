@@ -81,4 +81,24 @@ add_theme_support( 'post-thumbnails' );
 //     echo "<a href='http://localhost/scrollfield/'><h1>Go back</h1></a>";
 // }
 
+// capture data submitted in members registrations form
+if(isset($_POST['submitbtn'])){
+    echo $_POST['user_name'];
+    echo "</br>";
+    echo $_POST['user_email'];
+    $data = array(
+        'name' => $_POST['user_name'],
+        'email' => $_POST['user_email'],
+    );
+$table = 'members';
+
+$result = $wpdb->insert($table, $data, $format = null);
+
+    if($result == 1){
+        echo "<script>alert('Submitted data saved');</script>";
+    }else{
+        echo "<script>alert('Error, data not saved, try again.');</script>";
+    }
+}
+
 ?>
