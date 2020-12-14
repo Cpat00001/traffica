@@ -1,0 +1,11 @@
+/*
+Theme Name: Regis
+Author: Patryk
+*/
+/* front page */
+.divOne {
+  width: 300px;
+  height: 300px;
+  border: 1px solid white;
+  background-color: orangered;
+}
