@@ -101,4 +101,19 @@ $result = $wpdb->insert($table, $data, $format = null);
     }
 }
 
+//delete user in table
+if(isset($_POST['delete'])){
+    $data = array(
+        'id' => $_POST['custId']
+    );
+    $table = 'members';
+    $delResult = $wpdb->delete($table,$data, $format = null);
+    echo $_POST['custId'];
+    if($delResult == 1){
+        echo "<script>alert('Record deleted')</script>";
+    }else{
+        echo "<script>alert('Error, NOT Deleted')</script>";
+    }
+}
+
 ?>
