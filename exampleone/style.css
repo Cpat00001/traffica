@@ -1,0 +1,31 @@
+/*
+Theme Name: Twenty Twenty
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: Patryk
+*/
+/* center website */
+#header {
+  background-color: rgb(199, 195, 195);
+  padding: 1rem 0;
+  box-shadow: 5px 5px 15px #aaaaaa;
+}
+.logo {
+  width: 150px;
+  height: 70px;
+}
+/* styling menu list */
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+li {
+  padding: 15px;
+}
+a:link {
+  text-decoration: none;
+}
+a {
+  color: black;
+  font-weight: 900;
+}
