@@ -5,7 +5,7 @@ Author: Patryk
 */
 /* center website */
 #header {
-  background-color: rgb(199, 195, 195);
+  background-color: white;
   padding: 1rem 0;
   box-shadow: 5px 5px 15px #aaaaaa;
 }
@@ -28,4 +28,73 @@ a:link {
 a {
   color: black;
   font-weight: 900;
+}
+/* front-page */
+#hugo {
+  height: 500px;
+  width: 100%;
+  background: url('imgs/logis1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#welcometxt {
+  font-size: 40px;
+  font-weight: 900;
+  padding: 20px;
+  color: rgb(23, 24, 22);
+  text-shadow: 3px 3px rgb(191, 223, 160);
+}
+.contentFrontPage {
+  background-color: white;
+  min-height: 100px;
+  height: auto;
+}
+#textHolder {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+/* footer */
+#footer {
+  background-color: darkred;
+  color: white;
+  min-height: 100px;
+  padding: 1rem 0;
+  text-align: center;
+}
+/* page */
+.content {
+  background-color: darkgray;
+  min-height: 500px;
+}
+.photopage {
+  background-color: darkkhaki;
+  min-height: 500px;
+}
+/* responsive */
+
+@media only screen and (max-width: 575.98px) {
+  .menu ul {
+    background-color: rgb(201, 195, 195);
+    display: block;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    margin-top: 10px;
+  }
+  #hugo {
+    max-width: 100%;
+    height: auto;
+    min-height: 300px;
+  }
+  #welcometxt {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 20px;
+  }
 }
