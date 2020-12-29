@@ -14,7 +14,7 @@ Author: Patryk
   height: 70px;
 }
 /* styling menu list */
-ul {
+.header_menu ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@ a {
   color: black;
   font-weight: 900;
 }
-/* front-page */
+/* front-page && page*/
 #hugo {
   height: 500px;
   width: 100%;
@@ -55,10 +55,32 @@ a {
   margin: 0 auto;
   padding: 3rem 0;
 }
-
+#img_holder {
+  margin-top: 20px;
+  box-shadow: 2px 2px 5px rgb(228, 216, 216);
+}
+/* sidebar */
+#pagesidebar {
+  background-color: chocolate;
+  padding: 0px 10px;
+  box-shadow: 2px 2px 5px rgb(228, 216, 216);
+}
+#pagesidebar ul {
+  list-style-type: none;
+}
+#pagesidebar a {
+  color: rgb(71, 70, 70);
+  text-shadow: 2px 2px 5px rgb(187, 189, 190);
+}
+#pagesidebar a:hover {
+  color: rgb(230, 224, 224);
+  font-size: 18px;
+  text-shadow: 2px 2px 5px rgb(24, 114, 158);
+}
 /* footer */
 #footer {
-  background-color: darkred;
+  /* background-color: darkred; */
+  background-image: linear-gradient(to right, #b12121, #cf627e);
   color: white;
   min-height: 100px;
   padding: 1rem 0;

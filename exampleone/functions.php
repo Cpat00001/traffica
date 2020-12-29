@@ -18,5 +18,16 @@ add_action('wp_enqueue_scripts','exampleOne_javascript');
 add_theme_support('menus');
 //register menu
 register_nav_menus(array('top-menu' => 'Top Menu'));
+// add feature image to post
+add_theme_support('post-thumbnails');
+// set images' size
+add_image_size('post_img',1000,500,false);
 
+// add widget - sidebar on page
+register_sidebar(array(
+    'name' => 'PageSidebar',
+    'id' => 'pagesidebar',
+    'before_widget' => '<h4>',
+    'after_widget' => '</h4>'
+));
 ?>

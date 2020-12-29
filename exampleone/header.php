@@ -20,7 +20,8 @@
       </a>
       <!-- display menu Top Menu -->
       <?php wp_nav_menu(array(
-        'theme_location' => 'top-menu'
+        'theme_location' => 'top-menu',
+        'menu_class' => 'header_menu'
       )) ?>
     </div>
   </div>
