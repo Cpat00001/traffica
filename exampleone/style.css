@@ -9,12 +9,16 @@ Author: Patryk
   padding: 1rem 0;
   box-shadow: 5px 5px 15px #aaaaaa;
 }
+.menu-item-70 a {
+  color: orangered;
+  text-shadow: 3px 3px 30px rgb(245, 245, 36);
+}
 .logo {
   width: 150px;
   height: 70px;
 }
 /* styling menu list */
-.header_menu ul {
+#menu-top-menu {
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -58,6 +62,7 @@ a {
 #img_holder {
   margin-top: 20px;
   box-shadow: 2px 2px 5px rgb(228, 216, 216);
+  display: inline-block;
 }
 /* sidebar */
 #pagesidebar {
@@ -76,6 +81,16 @@ a {
   color: rgb(230, 224, 224);
   font-size: 18px;
   text-shadow: 2px 2px 5px rgb(24, 114, 158);
+}
+/* archive */
+.tags a {
+  color: white;
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+/* pagination */
+.page-numbers {
+  color: grey;
 }
 /* footer */
 #footer {
