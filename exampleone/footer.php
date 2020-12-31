@@ -1,4 +1,4 @@
-<?php include 'contact.php'; ?>
+<?php include 'variables.php'; ?>
 <footer id="footer">
     <div class="container">
         <div class="row">
